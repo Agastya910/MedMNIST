@@ -146,7 +146,7 @@ class MedMNIST2D(MedMNIST):
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-        return img, target
+        return index, img, target
 
     def save(self, folder, postfix="png", write_csv=True):
         from medmnist.utils import save2d
